@@ -16,4 +16,13 @@ public class CalculadoraServiceImpl implements CalculadoraService {
     public int restar(int num1, int num2) {
         return num1 - num2;
     }
+    @Override
+	public boolean comprobarParametros(int num1, int num2) {
+		if(num1<0 && num2<0) {
+			return false;
+		}
+		else {
+			return true;
+		}		
+	}
 }
