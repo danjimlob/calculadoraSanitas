@@ -15,6 +15,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.calculadora.service.CalculadoraService;
+import com.calculadora.service.TracerAPI;
 
 public class CalculadoraControllerTest {
 
@@ -22,6 +23,9 @@ public class CalculadoraControllerTest {
 
     @Mock
     private CalculadoraService calculadoraService;
+    
+    @Mock
+    private TracerAPI tracer;
 
     @InjectMocks
     private CalculadoraController calculadoraController;

@@ -35,9 +35,8 @@ public class CalculadoraController {
 	@GetMapping("/restar")
     @ApiOperation(value = "Realiza una resta", response = Integer.class)
     public int restar(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
-		int resultado = calculadoraService.sumar(num1, num2);
+		int resultado = calculadoraService.restar(num1, num2);
 		tracer.trace(resultado);
     	return resultado;
     }
-	/
 }
